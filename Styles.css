@@ -34,9 +34,10 @@ body {
 }
 
 .arrow {
-  position: absolute;
-  right: -30px;
+  position: relative;
+  right: -22px;
   font-size: 24px;
+  color: black;
 }
 
 .sub-boxes {
@@ -55,12 +56,43 @@ body {
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
+  position: relative;
+}
+
+.sub-sub-boxes {
+  display: none;
+  margin-left: 10px;
+  flex-direction: column;
+}
+
+.sub-sub-box {
+  background-color: #99ccff; /* Default sub-sub-box color */
+  padding: 3px;
+  margin: 2px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .title {
   text-align: center;
   width: 100%;
   padding: 10px;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #dddddd; /* Set a different color for the subtitle */
+  margin-top: 5px; /* Add space between the title and the subtitle */
+  text-align: center;
+}
+
+.main-box .subtitle {
+  font-size: 14px; /* Make the subtitle in the main boxes slightly larger */
+}
+
+.sub-box .subtitle {
+  font-size: 12px; /* Keep the subtitle in sub-boxes smaller */
 }
 
 /* Customization options for individual box colors */
@@ -82,3 +114,10 @@ body {
 #sub6 .sub-box { background-color: #aab7b8; }
 #sub7 .sub-box { background-color: #f5b041; }
 #sub8 .sub-box { background-color: #48c9b0; }
+
+/* Sub-sub-boxes colors */
+#subsub1-1 .sub-sub-box, #subsub1-2 .sub-sub-box, #subsub1-3 .sub-sub-box { background-color: #a9cce3; }
+#subsub2-1 .sub-sub-box, #subsub2-2 .sub-sub-box, #subsub2-3 .sub-sub-box { background-color: #f5b7b1; }
+
+/* Add similar sub-sub-box color definitions for other sub-boxes as needed */
+
