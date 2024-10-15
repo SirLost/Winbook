@@ -1,3 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Process Flow with Sub-Sub Boxes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+ 
+ 
+  <!-- External Data Repository  -->
+
+<div class="main-box" id="box1" title="Financial Event Creation, ERP Repos, External SF Accounts, Late Change Actors, High Churn Depenedncies...">
+  <div class="title" onclick="toggleSubMenu('sub1')">
+    External Data Repository
+    <div class="subtitle">Hover for details</div>
+  </div>
+  <div class="arrow">&#8594;</div>
+  <div class="sub-boxes" id="sub1">
+    <div class="sub-box" onclick="toggleSubSubMenu('subsub1-1')">
+      Sub-box 1.1
+      <div class="subtitle">Hover for details</div>
+      <div class="sub-sub-boxes" id="subsub1-1">
+        <div class="sub-sub-box">Sub-Sub-box 1.1.1</div>
+        <div class="sub-sub-box">Sub-Sub-box 1.1.2</div>
+        <div class="sub-sub-box">Sub-Sub-box 1.1.3</div>
+      <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+      </div>
+    </div>
+    <div class="sub-box" onclick="toggleSubSubMenu('subsub1-2')">
+      Sub-box 1.2
+      <div class="subtitle">Hover for details</div>
+      <div class="sub-sub-boxes" id="subsub1-2">
+        <div class="sub-sub-box">Sub-Sub-box 1.2.1</div>
+        <div class="sub-sub-box">Sub-Sub-box 1.2.2</div>
+        <div class="sub-sub-box">Sub-Sub-box 1.2.3</div>
+      <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Integration: Acquisition -->
+
+  <div class="main-box" id="box2" title="Getting Data Into DMET: Datalake/Stewarts/APIs">
+    <div class="title" onclick="toggleSubMenu('sub2')">Integration: Acquisition</div>
+    <div class="arrow">&#8594;</div>
+    <div class="sub-boxes" id="sub2" title="Ingest data from any API into the dataplatform">
+      <div class="sub-box" onclick="toggleSubSubMenu('subsub2-1')">Universal API Connector
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub2-1">
+          <div class="sub-sub-box">Prototype</div>
+          <div class="sub-sub-box">MVP</div>
+          <div class="sub-sub-box">GA</div>
+        <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+        </div>
+      </div>
+      <div class="sub-box" onclick="toggleSubSubMenu('subsub2-2')">Manual File Upload
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub2-2">
+          <div class="sub-sub-box">Sub-Sub-box 2.2.1</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.2.2</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.2.3</div>
+        </div>
+      </div>
+      <div class="sub-box" onclick="toggleSubSubMenu('subsub2-3')">XML Parsing Tool
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub2-3">
+          <div class="sub-sub-box">Sub-Sub-box 2.3.1</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.3.2</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.3.3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Validation -->
+
+  <div class="main-box" id="box3" title="Make sure that data is in clean and correct format">
+    <div class="title" onclick="toggleSubMenu('sub3')">Testing: Validation</div>
+    <div class="arrow">&#8594;</div>
+    <div class="sub-boxes" id="sub3">
+      <div class="sub-box" onclick="toggleSubSubMenu('subsub3-1')">Sub-box 2.1
+        <div class="sub-sub-boxes" id="subsub3-1">
+          <div class="sub-sub-box">Sub-Sub-box 2.1.1</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.1.2</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.1.3</div>
+        </div>
+      </div>
+      <div class="sub-box" onclick="toggleSubSubMenu('subsub3-2')">Sub-box 2.2
+        <div class="sub-sub-boxes" id="subsub3-2">
+          <div class="sub-sub-box">Sub-Sub-box 2.2.1</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.2.2</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.2.3</div>
+        </div>
+      </div>
+      <div class="sub-box" onclick="toggleSubSubMenu('subsub3-3')">Sub-box 2.3
+        <div class="sub-sub-boxes" id="subsub3-3">
+          <div class="sub-sub-box">Sub-Sub-box 2.3.1</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.3.2</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.3.3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Standard DMET Validation -->
+
+  <div class="main-box" id="box4" title="Make sure the right data gets the right transformation to go to the right place">
+    <div class="title" onclick="toggleSubMenu('sub4')">Standard DMET Validation</div>
+    <div class="arrow">&#8594;</div>
+    <div class="sub-boxes" id="sub4">
+      <div class="sub-box" onclick="toggleSubSubMenu('subsub4-1')">Sub-box 2.1
+        <div class="sub-sub-boxes" id="subsub4-1">
+          <div class="sub-sub-box">Sub-Sub-box 2.1.1</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.1.2</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.1.3</div>
+        </div>
+      </div>
+      <div class="sub-box" onclick="toggleSubSubMenu('subsub4-2')">Sub-box 2.2
+        <div class="sub-sub-boxes" id="subsub4-2">
+          <div class="sub-sub-box">Sub-Sub-box 2.2.1</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.2.2</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.2.3</div>
+        </div>
+      </div>
+      <div class="sub-box" onclick="toggleSubSubMenu('subsub4-3')">Sub-box 2.3
+        <div class="sub-sub-boxes" id="subsub4-3">
+          <div class="sub-sub-box">Sub-Sub-box 2.3.1</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.3.2</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.3.3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Testing Certification and Product QA -->
+
+  <div class="main-box" id="box5" title="Confirm data can be reported on / product go/no go">
+    <div class="title" onclick="toggleSubMenu('sub5')">Testing Certification and Product QA</div>
+    <div class="arrow">&#8594;</div>
+    <div class="sub-boxes" id="sub5">
+      <div class="sub-box" onclick="toggleSubSubMenu('subsub5-1')">Sub-box 2.1
+        <div class="sub-sub-boxes" id="subsub5-1">
+          <div class="sub-sub-box">Sub-Sub-box 2.1.1</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.1.2</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.1.3</div>
+        </div>
+      </div>
+      <div class="sub-box" onclick="toggleSubSubMenu('subsub5-2')">Sub-box 2.2
+        <div class="sub-sub-boxes" id="subsub5-2">
+          <div class="sub-sub-box">Sub-Sub-box 2.2.1</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.2.2</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.2.3</div>
+        </div>
+      </div>
+      <div class="sub-box" onclick="toggleSubSubMenu('subsub5-3')">Sub-box 2.3
+        <div class="sub-sub-boxes" id="subsub5-3">
+          <div class="sub-sub-box">Sub-Sub-box 2.3.1</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.3.2</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.3.3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <!-- Integration: Data Storage -->
+
+  <div class="main-box" id="box6" title="Snowflake RAW data available for consumption">
+    <div class="title" onclick="toggleSubMenu('sub6')">Integration: Data Storage</div>
+    <div class="arrow">&#8594;</div>
+    <div class="sub-boxes" id="sub6">
+      <div class="sub-box" onclick="toggleSubSubMenu('subsub6-1')">Sub-box 2.1
+        <div class="sub-sub-boxes" id="subsub6-1">
+          <div class="sub-sub-box">Sub-Sub-box 2.1.1</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.1.2</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.1.3</div>
+        </div>
+      </div>
+      <div class="sub-box" onclick="toggleSubSubMenu('subsub6-2')">Sub-box 2.2
+        <div class="sub-sub-boxes" id="subsub6-2">
+          <div class="sub-sub-box">Sub-Sub-box 2.2.1</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.2.2</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.2.3</div>
+        </div>
+      </div>
+      <div class="sub-box" onclick="toggleSubSubMenu('subsub6-3')">Sub-box 2.3
+        <div class="sub-sub-boxes" id="subsub6-3">
+          <div class="sub-sub-box">Sub-Sub-box 2.3.1</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.3.2</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.3.3</div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  
  <!-- Rules Engines and Scenario Tools -->
 
   <div class="main-box" id="box7" title="SME Knowledge Capture, Translation and Orchestration">
@@ -28,3 +231,50 @@
     </div>
   </div>  
   
+ <!-- Integration: Publication -->
+
+  <div class="main-box" id="box8" title="User consumption, other products, APIs">
+    <div class="title" onclick="toggleSubMenu('sub7')">Integration: Publication</div>
+    <div class="arrow">&#8594;</div>
+    <div class="sub-boxes" id="sub8">
+      <div class="sub-box" onclick="toggleSubSubMenu('subsub8-1')">Sub-box 2.1
+        <div class="sub-sub-boxes" id="subsub8-1">
+          <div class="sub-sub-box">Sub-Sub-box 2.1.1</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.1.2</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.1.3</div>
+        </div>
+      </div>
+      <div class="sub-box" onclick="toggleSubSubMenu('subsub8-2')">Sub-box 2.2
+        <div class="sub-sub-boxes" id="subsub8-2">
+          <div class="sub-sub-box">Sub-Sub-box 2.2.1</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.2.2</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.2.3</div>
+        </div>
+      </div>
+      <div class="sub-box" onclick="toggleSubSubMenu('subsub8-3')">Sub-box 2.3
+        <div class="sub-sub-boxes" id="subsub8-3">
+          <div class="sub-sub-box">Sub-Sub-box 2.3.1</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.3.2</div>
+          <div class="sub-sub-box">Sub-Sub-box 2.3.3</div>
+        </div>
+      </div>
+    </div>
+  </div>  
+   
+  
+</div>
+
+<script>
+  function toggleSubMenu(subId) {
+    const subMenu = document.getElementById(subId);
+    subMenu.style.display = subMenu.style.display === "block" ? "none" : "block";
+  }
+
+  function toggleSubSubMenu(subSubId) {
+    const subSubMenu = document.getElementById(subSubId);
+    subSubMenu.style.display = subSubMenu.style.display === "block" ? "none" : "block";
+  }
+</script>
+
+</body>
+</html>
