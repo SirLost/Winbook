@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 100px;
+  margin-right: 20px;
+  background-color: #2b88d8; /* Default box color */
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
+  right: -30px;
+  font-size: 24px;
+}
+
+.sub-boxes {
+  display: none;
+  position: absolute;
+  top: 110px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-box {
+  background-color: #66a3ff; /* Default sub-box color */
+  padding: 5px;
+  margin: 2px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Customization options for individual box colors */
+#box1 { background-color: #3498db; }
+#box2 { background-color: #e74c3c; }
+#box3 { background-color: #f1c40f; }
+#box4 { background-color: #2ecc71; }
+#box5 { background-color: #9b59b6; }
+#box6 { background-color: #34495e; }
+#box7 { background-color: #e67e22; }
+#box8 { background-color: #1abc9c; }
+
+/* Change sub-box colors if needed */
+#sub1 .sub-box { background-color: #5dade2; }
+#sub2 .sub-box { background-color: #f1948a; }
+#sub3 .sub-box { background-color: #f7dc6f; }
+#sub4 .sub-box { background-color: #82e0aa; }
+#sub5 .sub-box { background-color: #c39bd3; }
+#sub6 .sub-box { background-color: #aab7b8; }
+#sub7 .sub-box { background-color: #f5b041; }
+#sub8 .sub-box { background-color: #48c9b0; }
