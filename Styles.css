@@ -89,7 +89,7 @@
           <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
         </div>
       </div>
-      <div class="sub-box light-greent" onclick="toggleSubSubMenu('subsub3-2')" title="Enable a non-technical resource to automatically create a data validation dashboard with a notification capability that notifies users when data doesn't match expectation">Validation Dashboard
+      <div class="sub-box light-grey" onclick="toggleSubSubMenu('subsub3-2')" title="Enable a non-technical resource to automatically create a data validation dashboard with a notification capability that notifies users when data doesn't match expectation">Validation Dashboard
         <div class="subtitle">Hover for details</div>
         <div class="sub-sub-boxes" id="subsub3-2">
           <div class="sub-sub-box green">Prototype</div>
