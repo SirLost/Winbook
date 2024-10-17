@@ -1,134 +1,278 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Process Flow with Sub-Sub Boxes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f4f4f4;
-}
+<div class="container">
+ 
+  <!-- External Data Repository  -->
+  
+  <div class="main-box" id="box1" title="Financial Event Creation, ERP Repos, External SF Accounts, Late Change Actors, High Churn Dependencies...">
+    <div class="title" onclick="toggleSubMenu('sub1')">External Data Repository
+      <div class="subtitle">Hover for details</div>
+    </div>
+    <div class="arrow">&#8594;</div>
+    <div class="sub-boxes" id="sub2">
+      <div class="sub-box light-grey" onclick="toggleSubSubMenu('subsub1-1')" title="TBU">Placeholder
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub1-1">
+          <div class="sub-sub-box light-red">Prototype</div>
+          <div class="sub-sub-box light-orange">MVP</div>
+          <div class="sub-sub-box light-green">GA</div>
+          <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+        </div>
+      </div>
+      <div class="sub-box light-grey" onclick="toggleSubSubMenu('subsub1-2')" title="TBU">Placeholder
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub1-2">
+          <div class="sub-sub-box dark-grey">Prototype</div>
+          <div class="sub-sub-box dark-grey">MVP</div>
+          <div class="sub-sub-box dark-grey">GA</div>
+          <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-.container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+  <!-- Integration: Acquisition -->
+  
+  <div class="main-box" id="box2" title="Getting Data Into DMET: Datalake/Stewarts/APIs">
+    <div class="title" onclick="toggleSubMenu('sub2')">Integration: Acquisition</div>
+    <div class="arrow">&#8594;</div>
+    <div class="sub-boxes" id="sub2">
+      <div class="sub-box light-green" onclick="toggleSubSubMenu('subsub2-1')" title="Ingest data from any API into the dataplatform">Universal API Connector
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub2-1">
+          <div class="sub-sub-box green">Prototype</div>
+          <div class="sub-sub-box dark-grey">MVP</div>
+          <div class="sub-sub-box dark-grey">GA</div>
+          <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+        </div>
+      </div>
+      <div class="sub-box light-green" onclick="toggleSubSubMenu('subsub2-2')" title="Manually upload CSVs and other file types based on permissions">Manual File Upload
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub2-2">
+          <div class="sub-sub-box green">Prototype</div>
+          <div class="sub-sub-box green">MVP</div>
+          <div class="sub-sub-box dark-grey">GA</div>
+          <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+        </div>
+      </div>
+      <div class="sub-box light-green" onclick="toggleSubSubMenu('subsub2-3')" title="Convert XML to CSV">XML Parsing Tool
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub2-3">
+          <div class="sub-sub-box green">Prototype</div>
+          <div class="sub-sub-box dark-grey">MVP</div>
+          <div class="sub-sub-box dark-grey">GA</div>
+          <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-.main-box {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 150px;
-  height: 100px;
-  margin-right: 20px;
-  background-color: #2b88d8; /* Default box color */
-  border-radius: 10px;
-  color: white;
-  cursor: pointer;
-}
+  <!-- Testing: Validation -->
+  <div class="main-box" id="box3" title="Make sure that data is in clean and correct format">
+    <div class="title" onclick="toggleSubMenu('sub3')">Testing: Validation</div>
+    <div class="arrow">&#8594;</div>
+    <div class="sub-boxes" id="sub3">
+      <div class="sub-box light-green" onclick="toggleSubSubMenu('subsub3-1')" title="Enable a non-technical resource to create a pipe to move data to an internal staging table automatically and to setup a structural validation with notification (wrong file type, name etc)">Auto Snowpipe Setup, trigger and notification
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub3-1">
+          <div class="sub-sub-box green">Prototype</div>
+          <div class="sub-sub-box dark-grey">MVP</div>
+          <div class="sub-sub-box dark-grey">GA</div>
+          <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+        </div>
+      </div>
+      <div class="sub-box light-greent" onclick="toggleSubSubMenu('subsub3-2')" title="Enable a non-technical resource to automatically create a data validation dashboard with a notification capability that notifies users when data doesn't match expectation">Validation Dashboard
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub3-2">
+          <div class="sub-sub-box green">Prototype</div>
+          <div class="sub-sub-box dark-grey">MVP</div>
+          <div class="sub-sub-box dark-grey">GA</div>
+          <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-.arrow {
-  position: relative;
-  right: -22px;
-  font-size: 24px;
-  color: black;
-}
-
-.sub-boxes {
-  display: none;
-  position: absolute;
-  top: 110px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-
-.sub-sub-boxes {
-  display: none;
-  margin-left: 10px;
-  flex-direction: column;
-}
-
-
-.title {
-  text-align: center;
-  width: 100%;
-  padding: 10px;
-}
-
-.subtitle {
-  font-size: 12px;
-  color: #dddddd; /* Set a different color for the subtitle */
-  margin-top: 5px; /* Add space between the title and the subtitle */
-  text-align: center;
-}
-
-.main-box .subtitle {
-  font-size: 14px; /* Make the subtitle in the main boxes slightly larger */
-}
-
-.sub-box .subtitle {
-  font-size: 12px; /* Keep the subtitle in sub-boxes smaller */
-}
-
-/* Customization options for individual box colors */
-#box1 { background-color: #3498db; }
-#box2 { background-color: #e74c3c; }
-#box3 { background-color: #f1c40f; }
-#box4 { background-color: #2ecc71; }
-#box5 { background-color: #9b59b6; }
-#box6 { background-color: #34495e; }
-#box7 { background-color: #e67e22; }
-#box8 { background-color: #1abc9c; }
+  <!-- Standard DMET Validation -->
+  
+  <div class="main-box" id="box4" title="Make sure the right data gets the right transformation to go to the right place">
+    <div class="title" onclick="toggleSubMenu('sub4')">Standard DMET Validation</div>
+    <div class="arrow">&#8594;</div>
+    <div class="sub-boxes" id="sub4">
+      <div class="sub-box light-green" onclick="toggleSubSubMenu('subsub4-1')" title="Intuitive user interface that lets a non-technical user develop an end-to-end data product by leveraging platform solutions">Platform Hub
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub4-1">
+          <div class="sub-sub-box green">Prototype</div>
+          <div class="sub-sub-box green">MVP</div>
+          <div class="sub-sub-box dark-grey">GA</div>
+          <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+        </div>
+      </div>
+      <div class="sub-box light-green" onclick="toggleSubSubMenu('subsub4-2')" title="User builds in Sigma (excel-like interface) the transformation, and then can export the transformation into code that gets ran in DBT. This removes the hard dependency on Data Developpers">Code Builder
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub4-2">
+          <div class="sub-sub-box green">Prototype</div>
+          <div class="sub-sub-box dark-grey">MVP</div>
+          <div class="sub-sub-box dark-grey">GA</div>
+          <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+        </div>
+      </div>
+      <div class="sub-box light-green" onclick="toggleSubSubMenu('subsub4-3')" title="Ability for a non technical user to export a sigma dashboard to PDF and save it in a given location based on his access">Printing Sigma Dashboards
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub4-3">
+          <div class="sub-sub-box green">Prototype</div>
+          <div class="sub-sub-box dark-grey">MVP</div>
+          <div class="sub-sub-box dark-grey">GA</div>
+          <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+        </div>
+      </div>
+      <div class="sub-box light-green" onclick="toggleSubSubMenu('subsub4-3')" title="Ability for a non technical user to trigger a DBT Job from the Platform Hub. Which makes customization of the Hub's abilities a breeze">DBT Job Trigger
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub4-3">
+          <div class="sub-sub-box green">Prototype</div>
+          <div class="sub-sub-box green">MVP</div>
+          <div class="sub-sub-box dark-grey">GA</div>
+          <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-/* General styling for sub-box and sub-sub-box */
-.sub-box, .sub-sub-box {
-  padding: 10px;
-  margin: 5px;
-  border-radius: 5px;
-  text-align: center;
-  cursor: pointer;
-  color: white;
-}
+  <!-- Testing Certification and Product QA -->
+  <div class="main-box" id="box5" title="Confirm data can be reported on / product go/no go">
+    <div class="title" onclick="toggleSubMenu('sub5')">Testing Certification and Product QA</div>
+    <div class="arrow">&#8594;</div>
+    <div class="sub-boxes" id="sub5">
+      <div class="sub-box light-grey" onclick="toggleSubSubMenu('subsub5-1')" title="TBU">DBT Certification Framework
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub5-1">
+          <div class="sub-sub-box dark-grey">Prototype</div>
+          <div class="sub-sub-box dark-grey">MVP</div>
+          <div class="sub-sub-box dark-grey">GA</div>
+          <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-/* Dark colors for sub-boxes and sub-sub-boxes */
-.dark-grey {
-  background-color: #555555; /* Dark grey */
-}
+  <!-- Integration: Data Storage -->
+  <div class="main-box" id="box6" title="Snowflake RAW data available for consumption">
+    <div class="title" onclick="toggleSubMenu('sub6')">Integration: Data Storage</div>
+    <div class="arrow">&#8594;</div>
+    <div class="sub-boxes" id="sub6">
+      <div class="sub-box light-green" onclick="toggleSubSubMenu('subsub6-1')" title="Ability to create a mock set of data in SF4 that passes validation rules">Mock Data Generator
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub6-1">
+          <div class="sub-sub-box green">Prototype</div>
+          <div class="sub-sub-box dark-grey">MVP</div>
+          <div class="sub-sub-box dark-grey">GA</div>
+          <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+        </div>
+      </div>
+      <div class="sub-box light-grey" onclick="toggleSubSubMenu('subsub6-2')" title="TBU">Data Versioning & History
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub6-2">
+          <div class="sub-sub-box dark-grey">Prototype</div>
+          <div class="sub-sub-box dark-grey">MVP</div>
+          <div class="sub-sub-box dark-grey">GA</div>
+          <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-.red {
-  background-color: #ff4c4c; /* Red */
-}
+  <!-- Rules Engines and Scenario Tools -->
+  <div class="main-box" id="box7" title="SME Knowledge Capture, Translation and Orchestration">
+    <div class="title" onclick="toggleSubMenu('sub7')">Rules Engines and Scenario Tools</div>
+    <div class="arrow">&#8594;</div>
+    <div class="sub-boxes" id="sub7">
+      <div class="sub-box light-grey" onclick="toggleSubSubMenu('subsub7-1')" title="Enables easy pre-mapping of a new business template to existing CRF">Data Mapper
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub7-1">
+          <div class="sub-sub-box dark-grey">Prototype</div>
+          <div class="sub-sub-box dark-grey">MVP</div>
+          <div class="sub-sub-box dark-grey">GA</div>
+          <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+        </div>
+      </div>
+      <div class="sub-box light-grey" onclick="toggleSubSubMenu('subsub7-2')" title="Enables users to convert Alteryx flows to Python or Sequel">Alteryx Conversion Tool
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub7-2">
+          <div class="sub-sub-box dark-grey">Prototype</div>
+          <div class="sub-sub-box dark-grey">MVP</div>
+          <div class="sub-sub-box dark-grey">GA</div>
+          <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+        </div>
+      </div>
+      <div class="sub-box light-grey" onclick="toggleSubSubMenu('subsub7-3')" title="AI enabled document scanner to pull data points from PDF documents">PDF Document Reader
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub7-3">
+          <div class="sub-sub-box dark-grey">Prototype</div>
+          <div class="sub-sub-box dark-grey">MVP</div>
+          <div class="sub-sub-box dark-grey">GA</div>
+          <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-.orange {
-  background-color: #ffa500; /* Orange */
-}
+  <!-- Integration: Publication -->
+  <div class="main-box" id="box8" title="User consumption, other products, APIs">
+    <div class="title" onclick="toggleSubMenu('sub8')">Integration: Publication</div>
+    <div class="arrow">&#8594;</div>
+    <div class="sub-boxes" id="sub8">
+      <div class="sub-box light-green" onclick="toggleSubSubMenu('subsub8-1')" title="Enables non-technical users to set up a data push to API from the DMET dataplatform">API Publisher
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub8-1">
+          <div class="sub-sub-box green">Prototype</div>
+          <div class="sub-sub-box dark-grey">MVP</div>
+          <div class="sub-sub-box dark-grey">GA</div>
+          <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+        </div>
+      </div>
+      <div class="sub-box light-grey" onclick="toggleSubSubMenu('subsub8-2')" title="General Ledger tie out - Guidelines and mapping of how products join together (both inter product data consumption and cross product validation)">Cross Product Joining
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub8-2">
+          <div class="sub-sub-box dark-grey">Prototype</div>
+          <div class="sub-sub-box dark-grey">MVP</div>
+          <div class="sub-sub-box dark-grey">GA</div>
+          <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+        </div>
+      </div>
+      <div class="sub-box light-grey" onclick="toggleSubSubMenu('subsub8-3')" title="Enable seamless navigation of the data platform by creating a layer of abstraction between data and consumption">Semantic Layer
+        <div class="subtitle">Hover for details</div>
+        <div class="sub-sub-boxes" id="subsub8-3">
+          <div class="sub-sub-box dark-grey">Prototype</div>
+          <div class="sub-sub-box dark-grey">MVP</div>
+          <div class="sub-sub-box dark-grey">GA</div>
+          <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-.green {
-  background-color: #4caf50; /* Green */
-}
+</div>
 
-/* Light colors for sub-boxes and sub-sub-boxes with transparency */
-.light-grey {
-  background-color: rgba(200, 200, 200, 0.7); /* Light grey with transparency */
-}
+<script>
+  function toggleSubMenu(subId) {
+    const subMenu = document.getElementById(subId);
+    subMenu.style.display = subMenu.style.display === "block" ? "none" : "block";
+  }
 
-.light-red {
-  background-color: rgba(255, 76, 76, 0.7); /* Light red with transparency */
-}
+  function toggleSubSubMenu(subSubId) {
+    const subSubMenu = document.getElementById(subSubId);
+    subSubMenu.style.display = subSubMenu.style.display === "block" ? "none" : "block";
+  }
+</script>
 
-.light-orange {
-  background-color: rgba(255, 165, 0, 0.7); /* Light orange with transparency */
-}
-
-.light-green {
-  background-color: rgba(76, 175, 80, 0.7); /* Light green with transparency */
-}
+</body>
+</html>
