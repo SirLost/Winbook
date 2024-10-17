@@ -49,15 +49,6 @@ body {
   flex-direction: column;
 }
 
-.sub-box {
-  background-color: #66a3ff; /* Default sub-box color */
-  padding: 5px;
-  margin: 2px;
-  border-radius: 5px;
-  text-align: center;
-  cursor: pointer;
-  position: relative;
-}
 
 .sub-sub-boxes {
   display: none;
@@ -65,14 +56,6 @@ body {
   flex-direction: column;
 }
 
-.sub-sub-box {
-  background-color: #99ccff; /* Default sub-sub-box color */
-  padding: 3px;
-  margin: 2px;
-  border-radius: 5px;
-  text-align: center;
-  cursor: pointer;
-}
 
 .title {
   text-align: center;
@@ -105,44 +88,47 @@ body {
 #box7 { background-color: #e67e22; }
 #box8 { background-color: #1abc9c; }
 
-/* Change sub-box colors if needed */
-#sub1 .sub-box { background-color: #5dade2; }
-#sub2 .sub-box { background-color: #f1948a; }
-#sub3 .sub-box { background-color: #f7dc6f; }
-#sub4 .sub-box { background-color: #82e0aa; }
-#sub5 .sub-box { background-color: #c39bd3; }
-#sub6 .sub-box { background-color: #aab7b8; }
-#sub7 .sub-box { background-color: #f5b041; }
-#sub8 .sub-box { background-color: #48c9b0; }
 
-/* Sub-sub-boxes background colors */
-#subsub1-1 .sub-sub-box, #subsub1-2 .sub-sub-box, #subsub1-3 .sub-sub-box { background-color: #a9cce3; }
-#subsub2-1 .sub-sub-box, #subsub2-2 .sub-sub-box, #subsub2-3 .sub-sub-box { background-color: #f5b7b1; }
-
-/* Subsub boxes status (green, red, orange etc) */
-#subsub1-1-1 {
-  background-color: #ffcccc; /* Light red */
-}
-#subsub1-1-2 {
-  background-color: #ccffcc; /* Light green */
+/* General styling for sub-box and sub-sub-box */
+.sub-box, .sub-sub-box {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
 }
 
-#subsub1-1-3 {
-  background-color: #ccccff; /* Light blue */
+/* Dark colors for sub-boxes and sub-sub-boxes */
+.dark-grey {
+  background-color: #555555; /* Dark grey */
 }
 
-#subsub1-2-1 {
-  background-color: #ffcc99; /* Light orange */
+.red {
+  background-color: #ff4c4c; /* Red */
 }
 
-#subsub1-2-2 {
-  background-color: #99ccff; /* Light sky blue */
+.orange {
+  background-color: #ffa500; /* Orange */
 }
 
-#subsub1-2-3 {
-  background-color: #ff99cc; /* Light pink */
+.green {
+  background-color: #4caf50; /* Green */
 }
 
+/* Light colors for sub-boxes and sub-sub-boxes with transparency */
+.light-grey {
+  background-color: rgba(200, 200, 200, 0.7); /* Light grey with transparency */
+}
 
-/* Add similar sub-sub-box color definitions for other sub-boxes as needed */
+.light-red {
+  background-color: rgba(255, 76, 76, 0.7); /* Light red with transparency */
+}
 
+.light-orange {
+  background-color: rgba(255, 165, 0, 0.7); /* Light orange with transparency */
+}
+
+.light-green {
+  background-color: rgba(76, 175, 80, 0.7); /* Light green with transparency */
+}
