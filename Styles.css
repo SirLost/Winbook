@@ -17,7 +17,7 @@
       <div class="subtitle">Hover for details</div>
     </div>
     <div class="arrow">&#8594;</div>
-    <div class="sub-boxes" id="sub2">
+    <div class="sub-boxes" id="sub1">
       <div class="sub-box light-grey" onclick="toggleSubSubMenu('subsub1-1')" title="TBU">Placeholder
         <div class="subtitle">Hover for details</div>
         <div class="sub-sub-boxes" id="subsub1-1">
