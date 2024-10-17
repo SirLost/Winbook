@@ -134,9 +134,9 @@
           <a href="https://example.com/sub-box-1-1" class="link">Go to Sub-box 1.1 Link</a>
         </div>
       </div>
-      <div class="sub-box light-green" onclick="toggleSubSubMenu('subsub4-3')" title="Ability for a non technical user to trigger a DBT Job from the Platform Hub. Which makes customization of the Hub's abilities a breeze">DBT Job Trigger
+      <div class="sub-box light-green" onclick="toggleSubSubMenu('subsub4-4')" title="Ability for a non technical user to trigger a DBT Job from the Platform Hub. Which makes customization of the Hub's abilities a breeze">DBT Job Trigger
         <div class="subtitle">Hover for details</div>
-        <div class="sub-sub-boxes" id="subsub4-3">
+        <div class="sub-sub-boxes" id="subsub4-4">
           <div class="sub-sub-box green">Prototype</div>
           <div class="sub-sub-box green">MVP</div>
           <div class="sub-sub-box dark-grey">GA</div>
